@@ -1,0 +1,102 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  padding: 45px 190px 0px 190px;
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .element1 {
+      position: absolute;
+      width: 41px;
+      height: 41px;
+      background-color: $green;
+      border-radius: 50%;
+    }
+
+    .element2 {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: $orange;
+      border: 3px solid $white;
+      border-radius: 50%;
+    }
+  }
+
+  .top-nav {
+    width: 100%;
+
+    .nav {
+      display: flex;
+      justify-content: flex-end;
+
+      li {
+        display: flex;
+        align-items: center;
+        a {
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          text-decoration: none;
+          margin-right: 35px;
+          color: $gray;
+        }
+        a.active {
+          color: $active;
+        }
+      }
+
+      .btn {
+        width: 132px;
+        height: 44px;
+      }
+
+      .login {
+        border: 1px solid $orange;
+        border-radius: 8px;
+        padding-left: 45px;
+        a {
+          color: $orange;
+        }
+      }
+
+      .register {
+        margin-left: 18px;
+        background-color: $orange;
+        border-radius: 8px;
+        padding-left: 36px;
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .navigation {
+    padding: 0px;
+    .logo {
+      padding-left: 25px;
+    }
+
+    .top-nav {
+      width: 90%;
+
+      .nav {
+        padding-top: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 10px;
+      }
+    }
+  }
+}

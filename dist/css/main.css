@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  padding: 45px 190px 0px 190px;
+}
+.navigation .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navigation .logo .element1 {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  background-color: #1abe84;
+  border-radius: 50%;
+}
+.navigation .logo .element2 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fb8f1d;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+.navigation .top-nav {
+  width: 100%;
+}
+.navigation .top-nav .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.navigation .top-nav .nav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navigation .top-nav .nav li a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  margin-right: 35px;
+  color: #b8becd;
+}
+.navigation .top-nav .nav li a.active {
+  color: #202336;
+}
+.navigation .top-nav .nav .btn {
+  width: 132px;
+  height: 44px;
+}
+.navigation .top-nav .nav .login {
+  border: 1px solid #fb8f1d;
+  border-radius: 8px;
+  padding-left: 45px;
+}
+.navigation .top-nav .nav .login a {
+  color: #fb8f1d;
+}
+.navigation .top-nav .nav .register {
+  margin-left: 18px;
+  background-color: #fb8f1d;
+  border-radius: 8px;
+  padding-left: 36px;
+}
+.navigation .top-nav .nav .register a {
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  .navigation {
+    padding: 0px;
+  }
+  .navigation .logo {
+    padding-left: 25px;
+  }
+  .navigation .top-nav {
+    width: 90%;
+  }
+  .navigation .top-nav .nav {
+    padding-top: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    gap: 10px;
+  }
+}
+.section01 {
+  padding-left: 189px;
+  padding-right: 105px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 80px;
+}
+.section01 .weather-finder {
+  width: 50%;
+}
+.section01 .weather-finder h1 {
+  font-weight: 700;
+  font-size: 64px;
+}
+.section01 .weather-finder h3 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.section01 .weather-finder hr {
+  width: 32px;
+  height: 4px;
+  background-color: black;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+.section01 .weather-finder form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.section01 .weather-finder form .location {
+  width: 250px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+.section01 .weather-finder form .btn {
+  width: 132px;
+  height: 40px;
+  margin-top: 15px;
+  color: #fff;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 15px;
+  background-color: #fb8f1d;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.section01 .weather-finder form .btn:hover {
+  -webkit-box-shadow: 0px 0px 10px 2px rgb(241, 162, 0);
+          box-shadow: 0px 0px 10px 2px rgb(241, 162, 0);
+}
+.section01 .thousand-img {
+  width: 50%;
+}
+.section01 .thousand-img img {
+  width: 487px;
+  height: 454px;
+}
+
+@media (max-width: 800px) {
+  .section01 {
+    padding-left: 20px;
+    padding-right: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-top: 0px;
+  }
+  .section01 .weather-finder {
+    width: 50%;
+  }
+  .section01 .weather-finder h1 {
+    font-weight: 700;
+    font-size: 64px;
+  }
+  .section01 .weather-finder h3 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  .section01 .weather-finder hr {
+    width: 32px;
+    height: 4px;
+    background-color: black;
+    border-radius: 15px;
+    margin-bottom: 40px;
+  }
+  .section01 .weather-finder form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section01 .thousand-img {
+    display: none;
+  }
+  .section01 .thousand-img img {
+    display: none;
+  }
+}
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f9f9fb;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.footer .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 189px;
+}
+.footer .logo .element1 {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  background-color: #1abe84;
+  border-radius: 50%;
+}
+.footer .logo .element2 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fb8f1d;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+.footer p {
+  width: 100%;
+  padding-right: 189px;
+  text-align: center;
+  font-family: "Inter";
+  color: #b8becd;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 28px;
+}
+
+@media (max-width: 800px) {
+  .footer .logo {
+    padding-left: 25px;
+  }
+  .footer p {
+    padding-right: 25px;
+    font-size: 14px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.thousand-sunny {
+  width: 100vw;
+  height: 100vh;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.popup .X {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 3px solid red;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.popup .X:hover {
+  background-color: red;
+}
+.popup .X .fa-x {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  -webkit-transform: translate(-60%, 35%);
+          transform: translate(-60%, 35%);
+}
+.popup .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.popup .info .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.popupactive {
+  position: fixed;
+  top: 10%;
+  left: 35%;
+  -webkit-transform: translate(0%, 120%);
+          transform: translate(0%, 120%);
+  background-color: #fff;
+  width: 30%;
+  height: 200px;
+  border: 3px solid black;
+  border-radius: 10px;
+  z-index: 1;
+  -webkit-transition: 0.25s ease-in;
+  transition: 0.25s ease-in;
+}/*# sourceMappingURL=main.css.map */
